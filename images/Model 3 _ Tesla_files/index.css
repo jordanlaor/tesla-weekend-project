@@ -97,18 +97,13 @@ h4 {
 }
 
 /* Paragraphs */
-.p-dark,
-.p-light {
+.p-dark {
   font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #393c41;
-}
-
-.p-light {
-  color: #ffffff;
 }
 
 /* Buttons */
@@ -123,7 +118,6 @@ h4 {
   font-size: 12px;
   line-height: 14px;
   text-align: center;
-  display: inline-block;
 }
 
 .light-btn:hover {
@@ -143,7 +137,6 @@ h4 {
   font-size: 12px;
   line-height: 14px;
   text-align: center;
-  display: inline-block;
 }
 
 .dark-btn:hover {
@@ -263,7 +256,7 @@ h4 {
   padding-top: 150px;
 }
 
-#model-3-stats-section {
+#stats-section {
   text-align: center;
   width: fit-content;
   min-width: 159.33px;
@@ -385,7 +378,7 @@ h4 {
 .learn-more {
   width: fit-content;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .learn-more-btn {
@@ -411,45 +404,14 @@ h4 {
 }
 
 /* Page 3 */
-#perfomance-text {
-  height: 250px;
-  padding-top: 48px;
+#perfomance {
 }
 
-#perfomance-text-content {
-  width: fit-content;
-  margin: auto;
+#perfomance-text {
+  height: 250px;
 }
 
 #perfomance-image {
   height: calc(100vh - 250px);
   background: url("../images/page-3.png") no-repeat center center/cover;
-  padding-top: 514px;
-}
-
-#perfomance-stats-section {
-  text-align: left;
-  width: fit-content;
-  min-width: 159.33px;
-  margin: 0px auto;
-  height: 84px;
-}
-
-#perfomance-stats-section .stats-box {
-  padding: 20px;
-  padding-bottom: 0px;
-  width: 318.1px;
-}
-
-.info-box {
-  display: inline-block;
-}
-
-#performance-info-box-text {
-  width: 630.75px;
-  padding-left: 20px;
-}
-
-#performance-info-box-h2 {
-  padding-bottom: 20px;
 }
