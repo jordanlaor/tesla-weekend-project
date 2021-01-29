@@ -24,22 +24,25 @@ a {
 /* Fonts */
 @font-face {
   font-family: "Gotham Book";
-  src: url("../fonts/GothamBook.ttf") format("truetype");
-  font-weight: 300;
+  src: url("../fonts/GothamBook.otf") format("opentype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham Medium";
-  src: url("../fonts/GothamMedium.ttf") format("truetype");
-  font-weight: 400;
+  src: url("../fonts/GothamMedium.otf") format("opentype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham Bold";
-  src: url("../fonts/GothamBold.ttf") format("truetype");
-  font-weight: 700;
+  src: url("../fonts/GothamBold.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/GothamLight.otf") format("opentype");
   font-style: normal;
 }
 
@@ -74,6 +77,35 @@ h2 {
   color: #171a20;
 }
 
+h3 {
+  font-family: "Gotham Light", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  color: #171a20;
+}
+
+h4 {
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171a20;
+  text-align: center;
+}
+
+/* Paragraphs */
+.p-dark {
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;
+}
+
 /* Buttons */
 .light-btn {
   padding: 10px 40px;
@@ -91,6 +123,25 @@ h2 {
 .light-btn:hover {
   background: #ffffff;
   color: #171a20;
+  cursor: pointer;
+}
+
+.dark-btn {
+  padding: 10px 40px;
+  border: #171a20 3px solid;
+  border-radius: 100px;
+  color: #171a20;
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.dark-btn:hover {
+  color: #ffffff;
+  background: #171a20;
   cursor: pointer;
 }
 
@@ -257,23 +308,109 @@ h2 {
   height: 100vh;
   padding: 0px 50px;
   float: left;
-  background-color: blue;
+  background-color: #ffffff;
 }
 
-#safety-banner-img-container {
+#safety-banner-img {
   width: 75%;
   height: 100vh;
   float: right;
   position: relative;
   top: -3px;
   background: #f2f2f2;
+  background: url("../images/page-2.png") no-repeat center center/auto;
 }
 
-#safety-banner-img {
-  background: url("../images/page-2.png") no-repeat center center/auto;
+#safety-h3 {
+  margin-top: 50px;
+}
+
+#safety-h2 {
+  margin-top: 2px;
+}
+
+#safety-p {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+#safety-raiting-box {
+  padding: 24px;
+  background: #eeeeee;
+  border-radius: 24px;
+}
+
+.safety-raiting-box-line {
+  font-family: "Gotham Bold", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;
+}
+
+.safety-raiting-box-stars {
+  float: right;
+}
+
+.safety-raiting-box-stars:last-child {
+  padding-bottom: 8px;
+}
+
+.safety-raiting-box-minitext {
+  clear: both;
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 8px;
+  color: #393c41;
+  padding-bottom: 8px;
+}
+
+#safety-footer {
+  position: relative;
+  bottom: 150px;
+  display: block;
+  padding: 50px;
+}
+
+.learn-more {
+  width: fit-content;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.learn-more-btn {
+  border: 3px solid #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #000000;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+.learn-more-link:hover .learn-more-btn {
+  background: #000000;
+  color: #ffffff;
+}
+
+.learn-more-btn i {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
 }
 
 /* Page 3 */
 #perfomance {
-  background: orange;
+}
+
+#perfomance-text {
+  height: 250px;
+}
+
+#perfomance-image {
+  height: calc(100vh - 250px);
 }
