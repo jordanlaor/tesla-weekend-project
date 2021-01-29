@@ -12,6 +12,10 @@ body {
   display: inline;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Padding */
 .nav-padding {
   padding: auto 0px;
@@ -19,39 +23,30 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Book";
   src: url("../fonts/GothamBook.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Medium";
   src: url("../fonts/GothamMedium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Bold";
   src: url("../fonts/GothamBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
-.font-weight-book {
-  font-family: "Gotham";
-  font-weight: 300;
-}
-
 .font-weight-medium {
-  font-family: "Gotham";
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-}
-
-.font-weight-bold {
-  font-family: "Gotham";
-  font-weight: 700;
 }
 
 /* color */
@@ -61,16 +56,17 @@ body {
 
 /* Headings */
 h1 {
-  font-family: "Gotham", -apple-system, system-ui, "Segoe UI", Roboto,
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 48px;
   color: #ffffff;
+  margin: auto 0px;
 }
 
 h2 {
-  font-family: "Gotham", -apple-system, system-ui, "Segoe UI", Roboto,
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -79,28 +75,23 @@ h2 {
 }
 
 /* Buttons */
-button {
-  background: transparent;
-  border: unset;
-  border: #171a20 3px solid;
+.light-btn {
+  padding: 10px 40px;
+  border: #ffffff 3px solid;
   border-radius: 100px;
-  cursor: pointer;
-  height: 34px;
-  width: 154px;
-}
-
-button:hover {
-  background: #171a20;
   color: #ffffff;
-  cursor: pointer;
+  font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
 }
 
-button a {
+.light-btn:hover {
+  background: #ffffff;
   color: #171a20;
-  text-align: center;
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
+  cursor: pointer;
 }
 
 /* Nav Bar */
@@ -217,21 +208,46 @@ button a {
 #stats-section {
   text-align: center;
   width: fit-content;
-  position: absolute;
+  min-width: 159.33px;
   top: 790px;
   margin: 0px auto;
+  margin-top: 564px;
   height: 66px;
 }
 
 .stats-box {
   border-right: 1px solid #ffffff;
-  height: 66px;
-  padding: 25px 20px;
+  padding: 0px 20px;
+  padding-top: 13px;
   width: fit-content;
+  float: left;
+}
+
+.stats-box p {
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.stats-box img {
+  height: 18px;
 }
 
 .stats-box:last-child {
   border-right: none;
+}
+
+.stats-heading {
+  margin: 6px 0px;
+}
+
+.btn-box {
+  margin: auto 0px;
 }
 
 /* Page 2 */
