@@ -251,6 +251,29 @@ h2 {
 }
 
 /* Page 2 */
+
+#safety-banner-text {
+  width: 25%;
+  height: 100vh;
+  padding: 0px 50px;
+  float: left;
+  background-color: blue;
+}
+
+#safety-banner-img-container {
+  width: 75%;
+  height: 100vh;
+  float: right;
+  position: relative;
+  top: -3px;
+  background: #f2f2f2;
+}
+
+#safety-banner-img {
+  background: url("../images/page-2.png") no-repeat center center/auto;
+}
+
+/* Page 3 */
 #perfomance {
-  background: brown;
+  background: orange;
 }
