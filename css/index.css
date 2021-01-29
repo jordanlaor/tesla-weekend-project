@@ -1,0 +1,240 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  scroll-snap-type: y mandatory;
+}
+
+.inline {
+  display: inline;
+}
+
+/* Padding */
+.nav-padding {
+  padding: auto 0px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamBook.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamMedium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-weight-book {
+  font-family: "Gotham";
+  font-weight: 300;
+}
+
+.font-weight-medium {
+  font-family: "Gotham";
+  font-weight: 400;
+}
+
+.font-weight-bold {
+  font-family: "Gotham";
+  font-weight: 700;
+}
+
+/* color */
+.color-ffffff {
+  color: #ffffff;
+}
+
+/* Headings */
+h1 {
+  font-family: "Gotham", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Gotham", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #171a20;
+}
+
+/* Buttons */
+button {
+  background: transparent;
+  border: unset;
+  border: #171a20 3px solid;
+  border-radius: 100px;
+  cursor: pointer;
+  height: 34px;
+  width: 154px;
+}
+
+button:hover {
+  background: #171a20;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button a {
+  color: #171a20;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+/* Nav Bar */
+.navbar {
+  width: -webkit-fill-available;
+  margin: 0px 20px;
+  background: transparent;
+  position: absolute;
+}
+
+#not-top-page {
+  position: sticky;
+  top: 0px;
+}
+
+.secondary-navbar {
+  width: -webkit-fill-available;
+  margin: 0px 20px;
+  background: transparent;
+}
+
+.navbar-height {
+  height: 52px;
+}
+
+.navbar-light .logo {
+  min-height: 52px;
+  width: 100px;
+  background: url("../images/logo/logo-white.png") no-repeat center center/100px;
+  float: left;
+}
+
+.navbar-dark .logo {
+  min-height: 52px;
+  width: 100px;
+  background: url("../images/logo/logo-dark.png") no-repeat center center/100px;
+  float: left;
+}
+
+#top-page-navbar,
+#top-right-navbar,
+#right-navbar {
+  text-align: center;
+  width: 621.85px;
+  margin: 0px auto;
+  float: none;
+}
+
+#top-right-navbar,
+#right-navbar {
+  float: right;
+  width: auto;
+}
+
+.top-page-navbar-item {
+  margin: 17.6px 10px;
+  display: block;
+  width: fit-content;
+  float: left;
+  height: auto;
+}
+
+.top-page-navbar-item a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.top-right-btn i,
+.right-btn i {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.navbar-dark .right-btn i {
+  color: #393c41;
+}
+
+.navbar-light .top-right-btn,
+.navbar-dark .right-btn {
+  min-height: 52px;
+  text-align: left;
+  float: right;
+}
+
+#top-right-box,
+#right-box {
+  margin: 17.6px 0px;
+  width: 30px;
+  text-align: right;
+}
+
+/* Pages */
+.page {
+  height: 100vh;
+  width: -webkit-fill-available;
+  scroll-snap-align: start;
+}
+
+/* Page 1 */
+#model-3 {
+  background: url("../images/page-1.jpeg") no-repeat center center/cover;
+}
+
+#model-3-header {
+  margin: 0px auto;
+  width: fit-content;
+  padding-top: 150px;
+}
+
+#stats-section {
+  text-align: center;
+  width: fit-content;
+  position: absolute;
+  top: 790px;
+  margin: 0px auto;
+  height: 66px;
+}
+
+.stats-box {
+  border-right: 1px solid #ffffff;
+  height: 66px;
+  padding: 25px 20px;
+  width: fit-content;
+}
+
+.stats-box:last-child {
+  border-right: none;
+}
+
+/* Page 2 */
+#perfomance {
+  background: brown;
+}
