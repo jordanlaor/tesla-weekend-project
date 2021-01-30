@@ -174,9 +174,10 @@ h4 {
 #top-right-navbar,
 #right-navbar {
   text-align: center;
-  width: 621.85px;
+  width: fit-content;
   margin: 0px auto;
   float: none;
+  text-size-adjust: 100%;
 }
 
 #top-right-navbar,
@@ -198,6 +199,7 @@ h4 {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
+  text-size-adjust: 100%;
 }
 
 .top-right-btn i,
@@ -227,33 +229,67 @@ h4 {
 }
 
 /* In-page Navbar */
-#inpage-nav {
-  position: fixed;
+.inpage-nav {
+  position: relative;
   width: fit-content;
   height: 100vh;
   z-index: 2;
-  border-color: white;
+  float: left;
 }
 
-#inpage-nav ol {
+.inpage-nav ol {
   width: 115px;
   height: fit-content;
-  margin: auto 0px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 30px;
+  position: relative;
+  top: calc(50% - 126px);
 }
 
-#inpage-nav li {
-  width: 100%;
+.inpage-nav li {
+  width: 124px;
+  height: 23px;
   list-style-type: none;
-  border-left: inherit 1px solid;
-  display: block;
+  display: list-item;
+  margin: 6px 0px;
 }
 
-#inpage-nav li a {
-  font-size: 100%;
+.inpage-nav li a {
+  font-size: 9.1px;
+  height: 100%;
+  vertical-align: super;
+}
+
+.inpage-nav-line {
+  width: 1px;
+  height: 23px;
+  margin: 5px 14px 0px 9px;
+  display: inline-block;
+}
+
+.inpage-nav-current span {
+  width: 3px;
+  margin: 5px 13px 0px 8px;
+}
+
+.inpage-nav-line .inpage-nav-current {
+  opacity: 1 !important;
+}
+
+.inpage-nav-item .inpage-nav-dark {
+  color: #393c41;
+}
+
+.inpage-nav-dark .inpage-nav-line {
+  background: #393c41;
+  opacity: 0.25;
+}
+
+.inpage-nav-item .inpage-nav-light {
+  color: #ffffff;
+}
+
+.inpage-nav-light .inpage-nav-line {
+  background: #ffffff;
+  opacity: 0.25;
 }
 
 /* Pages */
