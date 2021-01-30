@@ -500,3 +500,47 @@ h4 {
 #performance-info-box-h2 {
   padding-bottom: 20px;
 }
+
+/* Page 4 */
+#all-wheel-text {
+  height: 250px;
+  padding-top: 48px;
+}
+
+#all-wheel-text-content {
+  width: fit-content;
+  margin: auto;
+}
+
+#all-wheel-image {
+  height: calc(100vh - 250px);
+  background: url("../images/page-3.png") no-repeat center center/cover;
+  padding-top: 514px;
+}
+
+#all-wheel-stats-section {
+  text-align: left;
+  width: fit-content;
+  min-width: 159.33px;
+  margin: 0px auto;
+  height: 84px;
+}
+
+#all-wheel-stats-section .stats-box {
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 318.1px;
+}
+
+.info-box {
+  display: inline-block;
+}
+
+#all-wheel-info-box-text {
+  width: 630.75px;
+  padding-left: 20px;
+}
+
+#all-wheel-info-box-h2 {
+  padding-bottom: 20px;
+}
