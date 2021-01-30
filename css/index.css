@@ -230,7 +230,7 @@ h4 {
 
 /* In-page Navbar */
 .inpage-nav {
-  position: relative;
+  position: absolute;
   width: fit-content;
   height: 100vh;
   z-index: 2;
@@ -270,8 +270,17 @@ h4 {
   margin: 5px 13px 0px 8px;
 }
 
-.inpage-nav-line.inpage-nav-light.inpage-nav-current {
+.inpage-nav-light .inpage-nav-line.inpage-nav-current,
+.inpage-nav-dark .inpage-nav-line.inpage-nav-current {
   opacity: 1;
+}
+
+.inpage-nav-item a {
+  visibility: hidden;
+}
+
+.inpage-nav-item:hover a {
+  visibility: unset;
 }
 
 .inpage-nav-item .inpage-nav-dark {
@@ -562,4 +571,78 @@ h4 {
 #all-wheel-info-box-p {
   padding-bottom: 14px;
   vertical-align: top;
+}
+
+/* Page 5 */
+
+#range-banner-text {
+  width: 25%;
+  height: 100vh;
+  padding: 0px 50px;
+  float: right;
+  background-color: #ffffff;
+}
+
+#range-banner-img {
+  width: 75%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  top: -3px;
+  background: #f2f2f2;
+  background: url("../images/page-2.png") no-repeat center center/auto;
+}
+
+#range-h3 {
+  margin-top: 50px;
+}
+
+#range-h2 {
+  margin-top: 2px;
+}
+
+#range-p {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+#range-raiting-box {
+  padding: 24px;
+  background: #eeeeee;
+  border-radius: 24px;
+}
+
+.range-raiting-box-line {
+  font-family: "Gotham Bold", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;
+}
+
+.range-raiting-box-stars {
+  float: right;
+}
+
+.range-raiting-box-stars:last-child {
+  padding-bottom: 8px;
+}
+
+.range-raiting-box-minitext {
+  clear: both;
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 8px;
+  color: #393c41;
+  padding-bottom: 8px;
+}
+
+#range-footer {
+  position: relative;
+  bottom: 150px;
+  display: block;
+  padding: 50px;
 }
