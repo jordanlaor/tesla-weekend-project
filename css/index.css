@@ -12,6 +12,10 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+.clr {
+  clear: both;
+}
+
 .inline {
   display: inline;
 }
@@ -674,4 +678,107 @@ h4 {
 
 #range-footer {
   margin-top: 224px;
+}
+
+/* Page 6 */
+#autopilot {
+  position: relative;
+}
+
+#autopilot-image {
+  height: calc(100vh - 250px);
+  padding-top: 514px;
+  position: relative;
+}
+
+#autopilot-image video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.autopilot-info-box p {
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  padding: 6px 0px;
+}
+
+#autopilot-info-container {
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  padding-top: 153px;
+  padding-left: 150px;
+}
+
+.autopilot-info-box {
+  width: 270px;
+  padding: 40px 0px;
+}
+
+.autopilot-info-seperator {
+  width: 60px;
+  height: 1px;
+  background: #00000080;
+}
+
+#autopilot-ultra-img {
+  height: 40px;
+  float: left;
+}
+
+.autopilot-ultra-title {
+  color: #171a20;
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+#autopilot-ultra-title-container {
+  width: calc(100% - 46px);
+  float: left;
+}
+
+#autopilot-info-box-spacer {
+  width: 5px;
+  height: 40px;
+  float: left;
+}
+
+#autopilot-info-box-text {
+  width: 624px;
+  padding: 0px;
+  height: 118px;
+  float: right;
+}
+
+#autopilot-info-box {
+  width: 331px;
+  margin-right: 20px;
+}
+
+#autopilot-info-box-h2 {
+  padding-bottom: 20px;
+}
+
+#autopilot-info-box-p {
+  padding-bottom: 14px;
+  vertical-align: top;
+}
+
+#autopilot-text {
+  height: 250px;
+  padding-top: 48px;
+  position: absolute;
+  bottom: -2px;
+  padding-left: 345px;
+  background: #ffffff;
+  padding-right: calc(100% - 1320px);
 }
