@@ -3,9 +3,21 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   scroll-snap-type: y mandatory;
+}
+
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .inline {
@@ -243,6 +255,20 @@ h4 {
   margin: 17.6px 0px;
   width: 30px;
   text-align: right;
+}
+
+/* In-page Navbar */
+#inpage-nav {
+  position: relative;
+  width: fit-content;
+  height: 100vh;
+  z-index: 10;
+}
+
+#inpage-nav ol {
+  height: fit-content;
+  margin: auto 0px;
+  position: fixed;
 }
 
 /* Pages */
