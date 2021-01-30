@@ -141,13 +141,22 @@ h4 {
   margin: 0px 20px;
   background: transparent;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
 }
 
-#not-top-page {
+.not-top-page-dark {
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 5;
+}
+
+.not-top-page-light {
+  position: sticky;
+  top: 0px;
+}
+
+#page-7-navbar {
+  z-index: 6;
 }
 
 .secondary-navbar {
@@ -219,10 +228,12 @@ h4 {
 }
 
 .navbar-light .top-right-btn,
-.navbar-dark .right-btn {
+.navbar-dark .right-btn,
+.navbar-light .right-btn {
   min-height: 52px;
   text-align: left;
-  float: right;
+  position: absolute;
+  right: 20px;
 }
 
 #top-right-box,
@@ -232,12 +243,16 @@ h4 {
   text-align: right;
 }
 
+#tesla-account-btn {
+  margin-right: 50px;
+}
+
 /* In-page Navbar */
 .inpage-nav {
   position: absolute;
   width: fit-content;
   height: 100vh;
-  z-index: 2;
+  z-index: 4;
   float: left;
 }
 
@@ -781,4 +796,102 @@ h4 {
   padding-left: 345px;
   background: #ffffff;
   padding-right: calc(100% - 1320px);
+}
+
+#autopilot-learn-more span {
+  font-size: 12.5px;
+}
+
+/* Page 7 */
+#interior {
+  position: relative;
+}
+
+#interior-image {
+  height: calc(100vh - 255px);
+  background: url("../images/page-7.jpeg") no-repeat center center/cover;
+  padding-top: 514px;
+}
+
+.interior-info-box p {
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 6px 0px;
+}
+
+#interior-info-container {
+  padding-top: 100px;
+  padding-left: 150px;
+  width: 573px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.interior-info-seperator {
+  margin: 0px 245px 0px auto;
+  width: 60px;
+  height: 1px;
+  background: #ffffff;
+}
+
+#interior-info-box-spacer {
+  width: 5px;
+  height: 40px;
+  float: left;
+}
+
+#interior-info-box-text {
+  width: 624px;
+  padding: 0px;
+  height: 118px;
+  float: right;
+}
+
+.interior-info-box {
+  width: 270px;
+  padding: 40px 0px;
+  height: calc(fit-content + 80px);
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+#interior-info-box-h2 {
+  color: #171a20;
+  margin-bottom: 16px;
+}
+
+#interior-info-box-p {
+  padding-bottom: 14px;
+  vertical-align: top;
+}
+
+.interior-info-box-image {
+  height: 40px;
+}
+
+#interior .dark-btn {
+  padding: 10px 32px;
+}
+
+#interior-text {
+  height: 250px;
+  padding-top: 48px;
+  position: absolute;
+  bottom: -2px;
+  padding-left: 345px;
+  background: #ffffff;
+  padding-right: calc(100% - 1320px);
+}
+
+#interior-info-box-p {
+  padding-bottom: 14px;
+  vertical-align: top;
+}
+
+#interior-learn-more span {
+  font-size: 12.5px;
 }
