@@ -12,14 +12,6 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-scroll-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
 .inline {
   display: inline;
 }
@@ -170,11 +162,13 @@ h4 {
   margin: 0px 20px;
   background: transparent;
   position: absolute;
+  z-index: 1;
 }
 
 #not-top-page {
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 .secondary-navbar {
@@ -259,16 +253,32 @@ h4 {
 
 /* In-page Navbar */
 #inpage-nav {
-  position: relative;
+  position: fixed;
   width: fit-content;
   height: 100vh;
-  z-index: 10;
+  z-index: 2;
+  border-color: white;
 }
 
 #inpage-nav ol {
+  width: 115px;
   height: fit-content;
   margin: auto 0px;
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 30px;
+}
+
+#inpage-nav li {
+  width: 100%;
+  list-style-type: none;
+  border-left: inherit 1px solid;
+  display: block;
+}
+
+#inpage-nav li a {
+  font-size: 100%;
 }
 
 /* Pages */
