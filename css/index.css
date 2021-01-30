@@ -336,7 +336,7 @@ h4 {
   line-height: 18px;
   color: #ffffff;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .stats-box img {
@@ -485,7 +485,7 @@ h4 {
 #perfomance-stats-section .stats-box {
   padding: 20px;
   padding-bottom: 0px;
-  width: 318.1px;
+  width: 325.1px;
 }
 
 .info-box {
@@ -514,13 +514,13 @@ h4 {
 
 #all-wheel-image {
   height: calc(100vh - 250px);
-  background: url("../images/page-3.png") no-repeat center center/cover;
+  background: url("../images/page-4.jpeg") no-repeat center center/cover;
   padding-top: 514px;
 }
 
 #all-wheel-stats-section {
   text-align: left;
-  width: fit-content;
+  width: 979px;
   min-width: 159.33px;
   margin: 0px auto;
   height: 84px;
@@ -532,15 +532,34 @@ h4 {
   width: 318.1px;
 }
 
-.info-box {
-  display: inline-block;
+#all-wheel-stats-section .stats-box:first-of-type {
+  padding-left: 0px;
 }
 
 #all-wheel-info-box-text {
-  width: 630.75px;
-  padding-left: 20px;
+  width: 624px;
+  padding: 0px;
+  height: 118px;
+  float: right;
+}
+
+#all-wheel-info-box {
+  width: 331px;
+  margin-right: 20px;
 }
 
 #all-wheel-info-box-h2 {
   padding-bottom: 20px;
+}
+
+#all-wheel-weather {
+  width: 40px;
+  height: unset;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+#all-wheel-info-box-p {
+  padding-bottom: 14px;
+  vertical-align: top;
 }
