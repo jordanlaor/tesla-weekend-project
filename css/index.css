@@ -25,31 +25,6 @@ a {
   padding: auto 0px;
 }
 
-/* Fonts */
-@font-face {
-  font-family: "Gotham Book";
-  src: url("../fonts/GothamBook.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham Medium";
-  src: url("../fonts/GothamMedium.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham Bold";
-  src: url("../fonts/GothamBold.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gotham Light";
-  src: url("../fonts/GothamLight.otf") format("opentype");
-  font-style: normal;
-}
-
 .font-weight-medium {
   font-family: "Gotham Medium", -apple-system, system-ui, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
