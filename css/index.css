@@ -576,21 +576,21 @@ h4 {
 /* Page 5 */
 
 #range-banner-text {
-  width: 25%;
+  width: 24%;
   height: 100vh;
-  padding: 0px 50px;
+  padding-right: 50px;
+  padding-left: 22px;
   float: right;
   background-color: #ffffff;
 }
 
 #range-banner-img {
-  width: 75%;
+  width: 76%;
   height: 100vh;
   float: left;
   position: relative;
-  top: -3px;
   background: #f2f2f2;
-  background: url("../images/page-2.png") no-repeat center center/auto;
+  background: url("../images/page-5.jpeg") no-repeat center center/cover;
 }
 
 #range-h3 {
@@ -603,7 +603,7 @@ h4 {
 
 #range-p {
   margin-top: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 
 #range-raiting-box {
@@ -640,9 +640,38 @@ h4 {
   padding-bottom: 8px;
 }
 
-#range-footer {
+#range-stats-section {
+  text-align: left;
+  width: fit-content;
+  margin: 0px auto;
+  height: 84px;
   position: relative;
-  bottom: 150px;
-  display: block;
-  padding: 50px;
+  top: 765px;
+}
+
+#range-stats-section .stats-box {
+  padding: 0px 20px;
+  width: 250.8px;
+  height: 102px;
+}
+
+#range-stats-section .stats-box:first-of-type {
+  padding-left: 0px;
+}
+
+#range-banner-text img {
+  border-radius: 4px;
+  width: 336px;
+}
+
+#range-learn-more span {
+  font-size: 12.5px;
+}
+
+#range .dark-btn {
+  padding: 10px 32px;
+}
+
+#range-footer {
+  margin-top: 224px;
 }
